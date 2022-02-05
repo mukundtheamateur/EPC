@@ -1,0 +1,132 @@
+@font-face {
+    font-family: NunitoBold;
+    src: url(../font/NunitoBold.ttf);
+}
+
+.text-space-yellow {
+    color: #FFC100;
+}
+
+.text-space-black {
+    color: #101010;
+}
+.header-bg {
+  position: fixed;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.opac {
+  position: relative;
+  top:100vh;
+  padding: 100px;
+  width: 100%;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+/* curves from https://getwaves.io/ */
+html,
+body {
+    font-family: NunitoBold;
+    /* background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3); */
+    background: black;
+    /* background-repeat: no-repeat; */
+    -webkit-font-smoothing: antialiased;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    margin-top: -50px;
+    padding: 0;
+}
+
+body::-webkit-scrollbar {
+    display: none
+}
+
+::-moz-selection {
+    color: #101010;
+    background: #FFC100
+}
+
+::selection {
+    color: #101010;
+    background: #FFC100
+}
+
+.dropdown:hover > .dropdown-content {
+	display: block;
+}
+
+.sk-chase {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    animation: sk-chase 2.5s infinite linear both;
+  }
+  
+  .sk-chase-dot {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0; 
+    animation: sk-chase-dot 2.0s infinite ease-in-out both; 
+  }
+  
+  .sk-chase-dot:before {
+    content: '';
+    display: block;
+    width: 25%;
+    height: 25%;
+    background-color: #FFC100;
+    border-radius: 100%;
+    animation: sk-chase-dot-before 2.0s infinite ease-in-out both; 
+  }
+  
+  .sk-chase-dot:nth-child(1) { animation-delay: -1.1s; }
+  .sk-chase-dot:nth-child(2) { animation-delay: -1.0s; }
+  .sk-chase-dot:nth-child(3) { animation-delay: -0.9s; }
+  .sk-chase-dot:nth-child(4) { animation-delay: -0.8s; }
+  .sk-chase-dot:nth-child(5) { animation-delay: -0.7s; }
+  .sk-chase-dot:nth-child(6) { animation-delay: -0.6s; }
+  .sk-chase-dot:nth-child(1):before { animation-delay: -1.1s; }
+  .sk-chase-dot:nth-child(2):before { animation-delay: -1.0s; }
+  .sk-chase-dot:nth-child(3):before { animation-delay: -0.9s; }
+  .sk-chase-dot:nth-child(4):before { animation-delay: -0.8s; }
+  .sk-chase-dot:nth-child(5):before { animation-delay: -0.7s; }
+  .sk-chase-dot:nth-child(6):before { animation-delay: -0.6s; }
+  
+  @keyframes sk-chase {
+    100% { transform: rotate(360deg); } 
+  }
+  
+  @keyframes sk-chase-dot {
+    80%, 100% { transform: rotate(360deg); } 
+  }
+  
+  @keyframes sk-chase-dot-before {
+    50% {
+      transform: scale(0.4); 
+    } 100%, 0% {
+      transform: scale(1.0); 
+    } 
+  }
+
+  .spinner-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #101010;
+    z-index: 999999;
+    }
+
+    .spinner {
+        position: absolute;
+top: 48%;
+left: 48%;
+    }
